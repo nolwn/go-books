@@ -16,18 +16,18 @@ The project uses a SQLite database. I chose this in part because this is a toy p
 
 The kind of bookkeeping this program supports is called Double Entry Bookkeeping. It is super classic and old. In Double Entry Bookkeeping, different accounts are created that represent different parts of the business. When a transaction occurs, a bookkeeper would record a debit in one account and a corresponding credit in another. As an example, suppose I have a delivery business. I might purchase a delivery van on credit from Auto Haven. I would mark a credit in an account for Auto Haven, and a debit in an account for Delivery Vans.
 
-	Delivery Van Account
-	Debit							 Credit
-	-----------------------------------------------------------------
-	July 10	Auto Haven	$20,000		|
-									|
+    Delivery Van Account
+    Debit                            Credit
+    -----------------------------------------------------------------
+    July 10: Auto Haven $20,000    	|
+                                    |
 
 
-	Auto Haven Account
-	Debit							 Credit
-	-----------------------------------------------------------------
-									| July 10	Delivery Van $20,000
-									|
+    Auto Haven Account
+    Debit                            Credit
+    -----------------------------------------------------------------
+                                    | July 10: Delivery Van $20,000
+                                    |
 
 This records, not only that I owe Auto Haven $20,000 worth of delivery van, but also that my business now has $20,000 more in assets (the van I bought). This makes it easier to see what's actually going on in the business. Rather than just knowing that I paid out money to the Auto Haven, I can track where that money went in my business and therefore I can better tell what my business is worth and how it's doing.
 
